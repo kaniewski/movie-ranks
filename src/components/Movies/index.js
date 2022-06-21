@@ -1,9 +1,13 @@
 import styles from './index.module.scss'
+import {React, useState} from 'react';
 
 const MoviesTable = ({movies}) => {
     return (  
         <div>
-            {movies.Search.map(movie => (
+            {
+            movies.Search?.length > 0 
+            ? (
+            movies.Search.map(movie => (
                 <div className={styles.container}>
                     <div className={styles.poster}>
                         <img src={movie.Poster !== "N/A" ? movie.Poster : 'via.placeholder.com/200'} alt="poster" />
@@ -17,7 +21,14 @@ const MoviesTable = ({movies}) => {
                     </div> 
                 </div>
                 
-            ))}
+            ))
+            ) : (
+                <div className={styles.empty}>
+                    <h2>No movies found</h2>
+                    <h3>Try another title  &#8282;&#41;</h3>
+                    </div>
+            )
+            }
         </div>
     );
 }
