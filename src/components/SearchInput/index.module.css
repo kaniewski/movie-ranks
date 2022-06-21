@@ -1,0 +1,47 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #BDC3C7;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+
+.wrapper .input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  color: #363636;
+  font-weight: 600;
+}
+
+.wrapper .input::-webkit-input-placeholder {
+  color: #363636;
+  font-weight: 600;
+}
+
+.wrapper .input:-ms-input-placeholder {
+  color: #363636;
+  font-weight: 600;
+}
+
+.wrapper .input::-ms-input-placeholder {
+  color: #363636;
+  font-weight: 600;
+}
+
+.wrapper .input::placeholder {
+  color: #363636;
+  font-weight: 600;
+}
+
+.wrapper svg {
+  color: #363636;
+}
+/*# sourceMappingURL=index.module.css.map */

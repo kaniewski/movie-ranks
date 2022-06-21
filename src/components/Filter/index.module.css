@@ -1,0 +1,40 @@
+.container {
+  padding: 12px 0;
+}
+
+.container .filters {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .filters button {
+  margin-right: 12px;
+  border-radius: 8px;
+  background-color: #202020;
+  color: #9b9b9b;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.container .filters button svg {
+  width: 20px;
+  height: 15px;
+}
+
+.container .FilterMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.module.css.map */

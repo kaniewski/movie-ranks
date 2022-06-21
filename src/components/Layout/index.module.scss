@@ -1,0 +1,38 @@
+
+
+.container {
+    padding: 24px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+        color: #FED148;
+        svg {
+            margin-right: 12px;
+            height: 40px;
+            width: 32px;
+        }
+        h2 {
+            margin-left: 12px;
+            font-size: 32px;
+            color: #dddddd;
+        }
+    }
+
+    .main {
+        
+    }
+
+        .footer {
+            text-align: center;
+            font-size: 0.75rem;
+            margin-top: 16px;
+            min-height: 40px;
+        }
+}
+

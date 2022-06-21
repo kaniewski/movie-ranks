@@ -1,0 +1,25 @@
+.container {
+    padding: 12px 0;
+    .filters {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        button {
+            margin-right: 12px;
+            border-radius: 8px;
+            background-color: #202020;
+            color: #9b9b9b;
+            padding: 12px 24px;
+            cursor: pointer;
+            border: none;
+            svg {
+                width: 20px;
+                height: 15px;
+            }
+        }
+    }
+    .FilterMenu {
+        display: flex;
+        justify-content: center;
+    }
+}

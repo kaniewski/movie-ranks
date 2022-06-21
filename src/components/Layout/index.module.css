@@ -1,0 +1,42 @@
+.container {
+  padding: 24px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+  color: #FED148;
+}
+
+.container .header svg {
+  margin-right: 12px;
+  height: 40px;
+  width: 32px;
+}
+
+.container .header h2 {
+  margin-left: 12px;
+  font-size: 32px;
+  color: #dddddd;
+}
+
+.container .footer {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 16px;
+  min-height: 40px;
+}
+/*# sourceMappingURL=index.module.css.map */

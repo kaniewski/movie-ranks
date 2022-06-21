@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    margin: 32px 0;
+    background: #333333;
+    border-radius: 8px;
+    align-items: center;
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 0px 16px #fed148;
+    }
+    .poster {
+        width: 7%;
+        img {
+            height: 100%;
+            width: 100%;
+            transform: scale(1.1);
+            transition: transform .5s;
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
+    .wrapper {
+        margin: 0 20px;
+        .title {
+            &:hover {
+                color: #9b9b9b;
+            }
+        }
+        .year {
+            font-size: 0.9rem;
+            color: #fed148;
+        }
+        .type {
+            letter-spacing: 2px;
+            font-size: 0.6rem;
+            margin-top: 16px;
+            opacity: 0.6;
+        }
+    }
+}

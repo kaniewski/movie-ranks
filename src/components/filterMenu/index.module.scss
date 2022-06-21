@@ -1,0 +1,36 @@
+.container {
+    animation: fadeIn 1.2s;
+    background-color: #202020;
+    min-width: 60vh;
+    min-height: 15vh;
+    margin-top: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .box {
+        height: 12px;
+        width: 12px;
+        background: #363636;
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 20px 12px;
+        &:checked {
+            background-color: #FED148;
+        }
+        &:focus {
+            outline: max(2px, 0.15em) solid currentColor;
+            outline-offset: max(2px, 0.15em);
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
