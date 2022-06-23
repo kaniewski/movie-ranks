@@ -1,11 +1,11 @@
 import styles from './index.module.scss';
 import { BsSearch } from 'react-icons/bs';
 
-const SearchInput = ({...rest}) => {
+const SearchInput = ({placeholder, value, onChange, search}) => {
     return (
         <div className={styles.wrapper}>
-            <BsSearch className={styles.icon} />
-            <input className={styles.input} {...rest} />
+            <BsSearch className={styles.icon}/>
+            <input className={styles.input} placeholder={placeholder} value={value} onChange={onChange} />
         </div>
     );
 }

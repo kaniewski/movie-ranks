@@ -3,20 +3,32 @@ import Layout from '../components/Layout'
 import MoviesTable from '../components/Movies'
 import SearchInput from '../components/SearchInput'
 import styles from '../styles/Home.module.scss'
+import {React, useState, useEffect} from 'react';
 
 
-export default function Home({movies}) {
-  console.log(movies)
+export default function Home({}) {
+  const searchMovies = async (title) => {
+    const res = await fetch(`${API_URL}&s=${title}`)
+    const moviesSearch = await res.json();
+    setMoviesList(moviesSearch)
+  }
+
+  useEffect(() => {
+    searchMovies('all');
+  }, [])
+
+    const [moviesList, setMoviesList] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
   return (
     <>
     
     <Layout>
-      <p className={styles.counts}>Found {movies.totalResults} movies</p>
-      <SearchInput placeholder="Search movies" onChange={() => {
-        
-      }} />
+      <p className={styles.counts}>Found {moviesList.totalResults} movies</p>
+      <SearchInput placeholder="Search movies" onChange={(e) => {
+        setSearchTerm(e.target.value) 
+      }} search={searchTerm}/>
       <Filter />
-      <MoviesTable movies={movies} />
+      <MoviesTable movies={moviesList} />
     </Layout>
     
     </>
@@ -33,6 +45,5 @@ export const getStaticProps = async () => {
       movies,
     }
   }
-
-  
 }
+

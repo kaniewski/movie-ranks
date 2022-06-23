@@ -1,5 +1,4 @@
 import styles from './index.module.scss'
-import {React, useState} from 'react';
 
 const MoviesTable = ({movies}) => {
     return (  

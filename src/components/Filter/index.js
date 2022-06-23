@@ -5,7 +5,6 @@ import FilterMenu from '../FilterMenu'
 
 const Filter = () => {
     const [active, setActive] = useState(false);
-    console.log(active);
     return ( 
         <div className={styles.container}>
             <div className={styles.filters}>
