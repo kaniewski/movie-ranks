@@ -25,8 +25,7 @@ export default function Home({}) {
     <Layout>
       <p className={styles.counts}>Found {moviesList.totalResults} movies</p>
       <SearchInput placeholder="Search movies" onChange={(e) => {
-        setSearchTerm(e.target.value) 
-      }} search={searchTerm}/>
+        setSearchTerm(e.target.value)}} onClick={() => {searchMovies(searchTerm)}}/>
       <Filter />
       <MoviesTable movies={moviesList} />
     </Layout>
