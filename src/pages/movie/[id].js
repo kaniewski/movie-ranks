@@ -1,8 +1,6 @@
 import Layout from '../../components/Layout';
 import styles from './index.module.scss';
 import {BiCameraMovie} from 'react-icons/bi';
-import {useState} from 'react';
-import BeatLoader from  'react-spinners/BeatLoader';
 
 
 const Movie = ({movie}) => {
@@ -10,10 +8,6 @@ const Movie = ({movie}) => {
     return ( 
         <div>
             <Layout>
-            {loading ? 
-            (<div className={styles.loader}><BeatLoader size='20' margin='5' color='#fed148' speedMultiplier='0.7' /></div>)
-            
-            }
             <div className={styles.container}>
             <div className={styles.box}>
             <div className={styles.wrapper}>
@@ -59,13 +53,10 @@ const Movie = ({movie}) => {
 
 export default Movie;
 
-const [loading, setLoading] = useState(false);
 
 export const getServerSideProps = async ({ params }) => {
-    setLoading(true);
     const res = await fetch(`http://www.omdbapi.com/?i=${params.id}&apikey=7b41be11`);
     const movie = await res.json();
-    setLoading(false);
     return {
         props: {
             movie,
