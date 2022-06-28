@@ -7,7 +7,7 @@
       grid-template-rows: auto 1fr auto;
 }
 
-.container .header {
+.container .header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,16 +21,22 @@
   color: #FED148;
 }
 
+.container .header h1 {
+  cursor: pointer;
+}
+
 .container .header svg {
   margin-right: 12px;
   height: 40px;
   width: 32px;
+  cursor: pointer;
 }
 
 .container .header h2 {
   margin-left: 12px;
   font-size: 32px;
   color: #dddddd;
+  cursor: pointer;
 }
 
 .container .footer {

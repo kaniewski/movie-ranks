@@ -1,0 +1,98 @@
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.box {
+  background-color: #303030;
+  padding-top: 16px;
+  border-radius: 8px;
+}
+
+.box .Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.box .Title .Name {
+  font-size: 1.5rem;
+}
+
+.box .Title .light {
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.box .wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.box .wrapper .poster {
+  margin: 0 16px;
+}
+
+.box .wrapper .poster img {
+  width: 90%;
+  height: 90%;
+}
+
+.box .wrapper .basicinfo {
+  margin: 16px 0;
+}
+
+.box .wrapper .content {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .wrapper .content .info2 {
+  color: #9b9b9b;
+  margin-right: 16px;
+  display: block;
+}
+
+.awards {
+  margin-top: 64px;
+  -webkit-box-shadow: 0 0 3px #fed148;
+          box-shadow: 0 0 3px #fed148;
+  border-radius: 8px;
+  background-color: #303030;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.awards svg {
+  margin-right: 32px;
+  width: 50px;
+  height: 50px;
+  color: #fed148;
+}
+
+@media screen and (max-width: 1256px) {
+  .container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

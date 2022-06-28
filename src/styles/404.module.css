@@ -1,0 +1,25 @@
+.notfound {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound h1 {
+  font-size: 1.75rem;
+}
+
+.notfound h2 {
+  font-size: 1.25rem;
+}
+
+.notfound p {
+  font-size: 1rem;
+}
+
+.notfound a {
+  color: #fed148;
+}
+/*# sourceMappingURL=404.module.css.map */

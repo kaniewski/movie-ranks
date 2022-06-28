@@ -33,7 +33,7 @@ export default function Home({}) {
         setSearchTerm(e.target.value)}} onClick={() => {searchMovies(searchTerm)}}/>
       <Filter />
       { loading ? 
-      (<div className={styles.loader}><BeatLoader size='20' margin='5' color='#fed148' speedMultiplier='0.7' /></div>) 
+      (<div className={styles.loader}><BeatLoader size='20px' margin='5px' color='#fed148' speedMultiplier='0.7' /></div>) 
       : (<MoviesTable movies={moviesList} />)}
     </Layout>
     

@@ -41,10 +41,30 @@ const Movie = ({movie}) => {
                 </div>
             </div>
             </div>
+        {movie.Awards !== "N/A" ? 
         <div className={styles.awards}>
             <BiCameraMovie />
             {movie.Awards}
+        </div> : <></> }
         </div>
+        <div className={styles.moreinfo}>
+            <div className={styles.basicinfo}>
+            <h1>More information about {movie.Title}</h1>
+            <div className={styles.content}>
+                    <div className={styles.info2}>
+                        <div>BoxOffice</div>
+                        <div>Country</div>
+                        <div>Language</div>
+                        <div>IMDB Rating</div>
+                    </div>
+                    <div className={styles.info3}>
+                        <div>{movie.BoxOffice}</div>
+                        <div>{movie.Country}</div>
+                        <div>{movie.Language}</div>
+                        <div>{movie.imdbRating}</div>
+                    </div>
+                    </div>
+                    </div>
         </div>
         </Layout>
         </div>
