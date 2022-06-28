@@ -1,0 +1,71 @@
+.container {
+    width: 60%;
+    margin: auto;
+}
+.box {
+    background-color: #303030;
+    padding-top: 16px;
+    border-radius: 8px;
+    .Title {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        .Name {
+            font-size: 1.5rem;
+        }
+        .light {
+            font-size: 1rem;
+            color: #9b9b9b;
+        }
+    }
+    .wrapper {
+        justify-content: center;
+        display: flex;
+        border-radius: 8px;
+        margin-right: 5px;
+        .poster {
+            margin: 0 16px;
+
+            img {
+                width: 90%;
+                height: 90%;
+            }
+        }
+
+        .basicinfo {
+            margin: 16px 0;
+        }
+
+        .content {
+            margin-top: 24px;
+            display: flex;
+                .info2 {
+                    color: #9b9b9b;
+                    margin-right: 16px;
+                    display: block;
+                        }
+                } 
+    }
+    
+}
+.awards {
+    margin-top: 64px;
+    box-shadow: 0 0 3px #fed148;
+    border-radius: 8px;
+    background-color: #303030;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 32px;
+        width: 50px;
+        height: 50px;
+        color: #fed148;
+    }
+}
+
+@media screen and (max-width: 1256px) {
+    .container {
+        width: 100%;
+    }
+}

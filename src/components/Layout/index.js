@@ -1,6 +1,7 @@
 import styles from './index.module.scss'
 import Head from 'next/head'
 import { RiMovie2Line } from 'react-icons/ri';
+import Link from 'next/Link'
 
 const Layout = ({children}) => {
     return (
@@ -11,9 +12,13 @@ const Layout = ({children}) => {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <header className={styles.header}>
+            <Link href='/'>
+            <div>
             <RiMovie2Line />
             <h1>Movie</h1>
             <h2>Ranks</h2>
+            </div>
+            </Link>
         </header>
         <main className={styles.main}>
         {children}

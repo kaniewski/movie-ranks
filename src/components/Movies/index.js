@@ -1,4 +1,6 @@
 import styles from './index.module.scss'
+import React from 'react';
+import Link from 'next/Link';
 
 const MoviesTable = ({movies}) => {
     return (  
@@ -7,9 +9,10 @@ const MoviesTable = ({movies}) => {
             movies.Search?.length > 0 
             ? (
             movies.Search.map(movie => (
+                <Link href={`/movie/${movie.imdbID}`}>
                 <div className={styles.container}>
                     <div className={styles.poster}>
-                        <img src={movie.Poster !== "N/A" ? movie.Poster : 'via.placeholder.com/200'} alt="poster" />
+                        <img src={movie.Poster !== "N/A" ? movie.Poster : 'https://via.placeholder.com/300'} alt="poster" />
                     </div> 
                     <div className={styles.wrapper}>
                         <div className={styles.titleandyear}>
@@ -19,7 +22,7 @@ const MoviesTable = ({movies}) => {
                         <div className={styles.type}>{movie.Type}</div>
                     </div> 
                 </div>
-                
+                </Link>
             ))
             ) : (
                 <div className={styles.empty}>
