@@ -1,6 +1,6 @@
 import styles from './index.module.scss'
 import React from 'react';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 const MoviesTable = ({movies}) => {
     return (  

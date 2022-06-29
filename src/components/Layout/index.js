@@ -1,7 +1,7 @@
 import styles from './index.module.scss'
 import Head from 'next/head'
 import { RiMovie2Line } from 'react-icons/ri';
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Layout = ({children}) => {
     return (
