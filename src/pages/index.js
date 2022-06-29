@@ -7,7 +7,9 @@ import {React, useState, useEffect} from 'react';
 import BeatLoader from  'react-spinners/BeatLoader';
 
 
+
 export default function Home({}) {
+
   const searchMovies = async (title) => {
     setLoading(true);
     const res = await fetch(`${API_URL}&s=${title}`)

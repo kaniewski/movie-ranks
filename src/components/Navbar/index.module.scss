@@ -1,0 +1,41 @@
+.header {
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+        color: #FED148;
+    }
+
+    .btn {
+        position: absolute;
+        top: 6%;
+        right: 5%;
+        cursor: pointer;
+        border: 1px solid #FED148;
+        border-radius: 8px;
+        padding: 10px;
+        &:hover {
+            color: #363636;
+            background-color: #FED148;
+        }
+    }
+
+    h1 {
+        cursor: pointer;
+    }
+
+    svg {
+        margin-right: 12px;
+        height: 40px;
+        width: 32px;
+        cursor: pointer;
+    }
+
+    h2 {
+        margin-left: 12px;
+        font-size: 32px;
+        color: #dddddd;
+        cursor: pointer;
+    }
+}

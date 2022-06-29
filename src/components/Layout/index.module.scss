@@ -6,31 +6,6 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
 
-    .header {
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 32px;
-            color: #FED148;
-        }
-        
-        h1 {
-            cursor: pointer;
-        }
-        svg {
-            margin-right: 12px;
-            height: 40px;
-            width: 32px;
-            cursor: pointer;
-        }
-        h2 {
-            margin-left: 12px;
-            font-size: 32px;
-            color: #dddddd;
-            cursor: pointer;
-        }
-    }
 
     .main {
         
