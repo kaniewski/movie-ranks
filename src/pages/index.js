@@ -41,7 +41,7 @@ export default function Home({}) {
   )
 }
 
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=7b41be11'
+const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=7b41be11'
 
 export const getStaticProps = async () => {
   const res = await fetch(`${API_URL}&s=all`)

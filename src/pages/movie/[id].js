@@ -58,7 +58,7 @@ export default Movie;
 
 
 export const getServerSideProps = async ({ params }) => {
-    const res = await fetch(`http://www.omdbapi.com/?i=${params.id}&apikey=7b41be11`);
+    const res = await fetch(`https://www.omdbapi.com/?i=${params.id}&apikey=7b41be11`);
     const movie = await res.json();
     return {
         props: {
