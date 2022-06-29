@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import styles from './index.module.scss';
 import {BiCameraMovie} from 'react-icons/bi';
+import MoreInfo from '../../components/moreInformation';
 
 
 const Movie = ({movie}) => {
@@ -47,25 +48,7 @@ const Movie = ({movie}) => {
             {movie.Awards}
         </div> : <></> }
         </div>
-        <div className={styles.moreinfo}>
-            <div className={styles.basicinfo}>
-            <h1>More information about {movie.Title}</h1>
-            <div className={styles.content}>
-                    <div className={styles.info2}>
-                        <div>BoxOffice</div>
-                        <div>Country</div>
-                        <div>Language</div>
-                        <div>IMDB Rating</div>
-                    </div>
-                    <div className={styles.info3}>
-                        <div>{movie.BoxOffice}</div>
-                        <div>{movie.Country}</div>
-                        <div>{movie.Language}</div>
-                        <div>{movie.imdbRating}</div>
-                    </div>
-                    </div>
-                    </div>
-        </div>
+        <MoreInfo movie={movie} />
         </Layout>
         </div>
     );

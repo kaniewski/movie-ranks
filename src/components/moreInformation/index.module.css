@@ -1,0 +1,36 @@
+.moreinfo {
+  width: 60%;
+  margin: auto;
+}
+
+.moreinfo .basicinfo {
+  margin-top: 64px;
+  background-color: #303030;
+  border-radius: 8px;
+  padding-bottom: 16px;
+}
+
+.moreinfo .basicinfo .Title {
+  padding-top: 16px;
+  padding-left: 16px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.moreinfo .basicinfo .Title span {
+  font-style: italic;
+  color: #fed148;
+}
+
+.moreinfo .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.moreinfo .content .info2 {
+  color: #9b9b9b;
+  margin: 0 16px;
+  display: block;
+}
+/*# sourceMappingURL=index.module.css.map */
