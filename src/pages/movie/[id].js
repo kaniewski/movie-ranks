@@ -1,11 +1,20 @@
 import Layout from '../../components/Layout';
 import styles from './index.module.scss';
 import {BiCameraMovie} from 'react-icons/bi';
+import {BsFillFilePersonFill} from 'react-icons/bs';
 import MoreInfo from '../../components/moreInformation';
+
 
 
 const Movie = ({movie}) => {
     console.log(movie)
+
+        const actors = movie.Actors;
+        const actor = actors.split(",");
+        let firstActor = actor[0];
+        let secondActor = actor[1];
+        let thirdActor = actor[2];
+    
     return ( 
         <div>
             <Layout>
@@ -47,6 +56,20 @@ const Movie = ({movie}) => {
             <BiCameraMovie />
             {movie.Awards}
         </div> : <></> }
+        <div className={styles.actors}>
+            <div className={styles.actor}>
+                <BsFillFilePersonFill />
+                <p>{firstActor}</p>
+            </div>
+            <div className={styles.actor} id={styles.mid}>
+                <BsFillFilePersonFill />
+                <p>{secondActor}</p>
+            </div>
+    <div className={styles.actor}>
+                <BsFillFilePersonFill />
+                <p>{thirdActor}</p>
+            </div>
+        </div>
         </div>
         <MoreInfo movie={movie} />
         </Layout>

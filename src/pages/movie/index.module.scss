@@ -2,6 +2,41 @@
     width: 60%;
     margin: auto;
 }
+
+.actors {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .actor {
+            margin: 0 10px;
+            box-shadow: 0 0 3px #fed148;
+            background-color: #303030;
+        &:hover {
+            transform: scale(1.05);
+            }
+        &:nth-child(2) {
+            transform: scale(1.05);
+            &:hover {
+                transform: scale(1.1);
+                }
+        }
+        svg {
+            margin: 10px;
+            width: 200px;
+            height: 300px;
+            color: #505050;
+            opacity: 0.6;
+        }
+        p {
+            text-align: center;
+            color: #fed148;
+            opacity: 0.8;
+        }
+    }
+    
+}
+
 .box {
     background-color: #303030;
     padding-top: 16px;
@@ -67,5 +102,11 @@
 @media screen and (max-width: 1256px) {
     .container {
         width: 100%;
+    }
+    .actors {
+        flex-direction: column;
+        .actor {
+            margin: 20px 0;
+        }
     }
 }

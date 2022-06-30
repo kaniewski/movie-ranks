@@ -22,9 +22,60 @@
     }
 
     .email {
-        position: absolute;
-        top: 12%;
-        right: 2%;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #363636;
+        top: 0;
+        left: 0;
+        text-align: center;
+        z-index: 1;
+        overflow: hidden;
+        animation: fadeIn 1s;
+    }
+
+    .menutitle {
+        color: #FED148;
+        font-size: 1.5rem;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .burger {
+        background-color: transparent;
+        border: none;
+        z-index: 3;
+        svg {
+            color: #FED148;
+            position: absolute;
+            top: 6%;
+            left: 2%;
+        }
+    }
+
+    .burger2 {
+        background-color: transparent;
+            border: none;
+            z-index: 3;
+        
+            svg {
+                color: #FED148;
+                position: absolute;
+                top: 6%;
+                left: 2%;
+            }
+    }
+
+    .link {
+        font-size: 1.25rem;
+        &:hover {
+            color: #FED148;
+            cursor: pointer;
+        }
     }
 
     h1 {
@@ -43,5 +94,15 @@
         font-size: 32px;
         color: #dddddd;
         cursor: pointer;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
