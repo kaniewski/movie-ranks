@@ -12,6 +12,7 @@
             margin: 0 10px;
             box-shadow: 0 0 3px #fed148;
             background-color: #303030;
+            transition: transform .8s ease;
         &:hover {
             transform: scale(1.05);
             }
