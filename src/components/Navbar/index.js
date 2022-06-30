@@ -6,7 +6,7 @@ import { useContext } from 'react';
 
 
 const Navbar = () => {
-    const { user, login, logout }= useContext(AuthContext)
+    const { user, login, logout, authReady }= useContext(AuthContext)
     
 
     return (  
@@ -18,9 +18,13 @@ const Navbar = () => {
             <h2>Ranks</h2>
             </div>
             </Link>
+            { authReady && (
+            <div>
             {!user && <div className={styles.btn} onClick={login}>Sign in</div>}
             {user && <div className={styles.email}>{user.email}</div>}
             {user && <div className={styles.btn} onClick={logout}>Logout</div>}
+            </div>
+            )}
         </header>
     );
 }
