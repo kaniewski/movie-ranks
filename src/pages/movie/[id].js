@@ -3,11 +3,16 @@ import styles from './index.module.scss';
 import {BiCameraMovie} from 'react-icons/bi';
 import {BsFillFilePersonFill} from 'react-icons/bs';
 import MoreInfo from '../../components/moreInformation';
+import Comments from '../../components/Comments';
+import AddComment from '../../components/addComment';
+import DisableComment from '../../components/disabledComment';
+import { useContext } from 'react';
+import AuthContext from '../../../stores/authContext';
 
 
 
 const Movie = ({movie}) => {
-    console.log(movie)
+    const { user }= useContext(AuthContext)
 
         const actors = movie.Actors;
         const actor = actors.split(",");
@@ -72,6 +77,9 @@ const Movie = ({movie}) => {
         </div>
         </div>
         <MoreInfo movie={movie} />
+        <Comments />
+        {user && <AddComment />}
+        {!user && <DisableComment />}
         </Layout>
         </div>
     );

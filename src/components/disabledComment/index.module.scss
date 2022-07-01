@@ -1,0 +1,21 @@
+.container {
+    width: 60%;
+    margin: auto;
+    .disable {
+        margin-top: 24px;
+        border: 1px solid #f56767;
+        padding: 10px;
+        font-size: 1rem;
+        svg {
+            color: #f56767;
+            width: 25px;
+            height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1256px) {
+    .container {
+        width: 100%;
+    }
+}

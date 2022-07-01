@@ -29,7 +29,6 @@ const Navbar = () => {
                 {user && <div className={styles.email}>{user.email}</div>}
                 <div className={styles.link}>Visit your profile</div>
             </div>}
-            
             </div>
             )}
         </header>
