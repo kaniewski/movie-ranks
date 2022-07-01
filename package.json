@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
+    "faunadb": "^4.6.0",
     "netlify-identity-widget": "^1.9.2",
     "next": "^12.2.0",
     "node-sass": "^7.0.1",
