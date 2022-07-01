@@ -5,9 +5,9 @@ const SearchInput = ({placeholder, value, onChange, onClick}) => {
     return (
         <div className={styles.wrapper}>
             <BsSearch className={styles.icon} onClick={onClick}/>
-            <input className={styles.input} placeholder={placeholder} value={value} onChange={onChange} />
+            <input className={styles.input} placeholder={placeholder} value={value} onChange={onChange} onSubmit={onClick} />
         </div>
     );
-}
+} 
 
 export default SearchInput;

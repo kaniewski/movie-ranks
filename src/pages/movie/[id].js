@@ -21,7 +21,7 @@ const Movie = ({movie}) => {
         let thirdActor = actor[2];
     
     return ( 
-        <div>
+        <div className={styles.all}>
             <Layout>
             <div className={styles.container}>
             <div className={styles.box}>
@@ -61,6 +61,7 @@ const Movie = ({movie}) => {
             <BiCameraMovie />
             {movie.Awards}
         </div> : <></> }
+        <h1 className={styles.actorsword}>Main characters played by:</h1>
         <div className={styles.actors}>
             <div className={styles.actor}>
                 <BsFillFilePersonFill />
