@@ -33,7 +33,6 @@ export default function Home({}) {
       <p className={styles.counts}>Found {moviesList.totalResults} movies</p>
       <SearchInput placeholder="Search movies" onChange={(e) => {
         setSearchTerm(e.target.value)}} onClick={() => {searchMovies(searchTerm)}}/>
-      <Filter />
       { loading ? 
       (<div className={styles.loader}><BeatLoader size='20px' margin='5px' color='#fed148' speedMultiplier='0.7' /></div>) 
       : (<MoviesTable movies={moviesList} />)}

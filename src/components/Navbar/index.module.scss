@@ -110,3 +110,9 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .btn {
+        right: 1%;
+    }
+  }

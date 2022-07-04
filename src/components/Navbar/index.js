@@ -27,7 +27,6 @@ const Navbar = () => {
             {isToggled && <div className={styles.menu}>
                 <div className={styles.menutitle}>Menu <button className={styles.burger2} onClick={() => {setIsToggled(!isToggled)}}><GiHamburgerMenu /></button></div>
                 {user && <div className={styles.email}>{user.email}</div>}
-                <div className={styles.link}>Visit your profile</div>
             </div>}
             </div>
             )}
